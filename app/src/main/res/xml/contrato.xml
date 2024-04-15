@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextSueldoBruto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sueldo Bruto"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Sueldo Líquido"
+        android:layout_below="@id/editTextSueldoBruto"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewSueldoLiquido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sueldo Líquido: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/buttonCalcular"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonVolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:layout_below="@id/textViewSueldoLiquido"/>
+</RelativeLayout>
